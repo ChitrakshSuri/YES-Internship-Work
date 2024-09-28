@@ -1,0 +1,314 @@
+body {
+  font-family: Public Sans;
+  margin: 0;
+  padding: 0 30px;
+  /* padding-right: 0px; */
+  background-color: #fff;
+}
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  /* width: Fixed (779px) px; */
+  max-width: 100%;
+  /* height: Hug (74px) px; */
+  /* top: 128px; */
+  /* left: 60px; */
+  /* gap: 0px; */
+  /* opacity: 0px; */
+  padding: 20px;
+}
+
+.header {
+  background: radial-gradient(
+      134.61% 193.04% at 97.06% 13.13%,
+      #feac2f 0%,
+      #9b32ad 32.77%,
+      #381ab2 69.93%,
+      #17082c 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  width: 100%;
+  height: 431px;
+  left: 1668px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  /* angle: -180 deg; */
+}
+.head-text {
+  font-family: Public Sans;
+  font-size: 3.75rem;
+  font-weight: 400;
+  /* line-height: 74px; */
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: center;
+  width: 489px;
+  height: 74px;
+  gap: 0px;
+  opacity: 0px;
+  color: white;
+  padding-left: 25px;
+  padding-top: 25px;
+  /* margin: 0; */
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  width: 325px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  justify-content: center;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h1 {
+  /* padding-top: 0; */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.card-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card-content li {
+  padding-top: 20px;
+}
+
+/* Button Styles */
+.card-button {
+  display: inline-block;
+  background-color: white; /* Initial background */
+  color: black;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: 2px solid transparent; /* Border for the gradient effect */
+  transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition */
+}
+
+/* Add border with gradient */
+.card-button {
+  border-image: radial-gradient(
+      134.61% 193.04% at 97.06% 13.13%,
+      #feac2f 0%,
+      #9b32ad 32.77%,
+      #381ab2 69.93%,
+      #17082c 100%
+    )
+    1;
+}
+
+/* Hover effect for button */
+.card-button:hover {
+  background: radial-gradient(
+    134.61% 193.04% at 97.06% 13.13%,
+    #feac2f 0%,
+    #9b32ad 32.77%,
+    #381ab2 69.93%,
+    #17082c 100%
+  );
+  color: white; /* Change text color to white when hovered */
+}
+
+/* about section */
+
+.about-sec {
+  position: relative; /* To allow absolute positioning of inner elements */
+  height: 400px; /* Set a height to the section */
+  margin: 100px auto;
+}
+
+.about-sec-left {
+  position: absolute;
+  top: 0; /* Aligns the h1 at the top */
+  left: 0; /* Aligns the h1 on the left */
+}
+
+.about-sec-left h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin: 0;
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.about-sec-right {
+  position: absolute;
+  bottom: 0; /* Aligns the p at the bottom */
+  right: 0; /* Aligns the p on the right */
+}
+
+.about-sec-right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  max-width: 600px;
+  margin: 0;
+  padding: 20px; /* Optional padding for spacing */
+}
+
+/* Accordion */
+#accordion {
+  margin: 100px auto;
+  width: 78rem;
+  /* width: Fixed (1, 000px) px; */
+  /* height: Hug (609.73px) px; */
+  /* gap: 10px; */
+  /* opacity: 0px; */
+}
+#accordion li {
+  list-style: none;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black; /* colour for question */
+}
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #333;
+}
+#accordion label + input[type="radio"] {
+  /* to hide radio button */
+  display: none;
+}
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
+
+/* footer */
+.footer {
+  background: radial-gradient(
+    134.61% 193.04% at 97.06% 13.13%,
+    #feac2f 0%,
+    #9b32ad 32.77%,
+    #381ab2 69.93%,
+    #17082c 100%
+  );
+  width: 100%;
+  height: 431px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically */
+  border-radius: 20px;
+}
+
+.footer-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 74px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: white;
+  margin: 0; /* Reset margin for better centering */
+}
+
+.footer h2 {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  margin: 10px 0; /* Add some spacing between h1 and h2 */
+}
+
+.footer-button {
+  background-color: white;
+  color: black;
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 16px 5px;
+  margin-top: 20px;
+  border: 2px solid transparent;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .about-sec {
+    height: auto; /* Let it adjust for small screens */
+  }
+
+  .about-sec-left h1,
+  .about-sec-right p {
+    position: static; /* Remove absolute positioning on small screens */
+    padding: 10px;
+  }
+
+  .about-sec-right {
+    margin-top: 20px;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .head-text {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .card {
+    width: 100%; /* Full width for small screens */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .head-text {
+    font-size: 3rem; /* Adjust font size */
+  }
+}
