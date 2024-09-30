@@ -9,7 +9,6 @@ body {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
-  /* width: Fixed (779px) px; */
   max-width: 100%;
   /* height: Hug (74px) px; */
   /* top: 128px; */
@@ -18,7 +17,12 @@ body {
   /* opacity: 0px; */
   padding: 20px;
 }
-
+.header-card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30rem;
+}
 .header {
   background: radial-gradient(
       134.61% 193.04% at 97.06% 13.13%,
@@ -58,14 +62,18 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+  position: absolute;
+  top: 15rem;
+  margin: 0 auto;
+  /* left: 32%; */
 }
 
 .card {
-  width: 325px;
+  width: 22rem;
   background-color: white;
   border-radius: 10px;
   border: 1px solid #bdbdbd;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,22 +108,35 @@ body {
   margin-bottom: 20px;
 }
 
-.card-content li {
+/* .card-content li {
+  padding-top: 20px;
+} */
+.parent-ul-li {
+  margin-top: 20px;
+}
+.ul-li {
   padding-top: 20px;
 }
-
 /* Button Styles */
 .card-button {
   display: inline-block;
   background-color: white; /* Initial background */
   color: black;
-  width: 100%;
+  /* width: 100%; */
+  width: 13rem;
   text-decoration: none;
   border-radius: 5px;
   padding: 8px 16px;
   margin-top: 10px;
   border: 2px solid transparent; /* Border for the gradient effect */
   transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition */
+}
+.custom-hr {
+  margin-top: 1.5rem;
+  height: 1px;
+  border: 0;
+  background-color: #e0e0e0; /* You can also use #D3D3D3 for light grey */
+  color: #e0e0e0;
 }
 
 /* Add border with gradient */
@@ -183,19 +204,19 @@ body {
 
 /* Accordion */
 #accordion {
-  margin: 100px auto;
-  width: 78rem;
-  /* width: Fixed (1, 000px) px; */
-  /* height: Hug (609.73px) px; */
-  /* gap: 10px; */
-  /* opacity: 0px; */
+  border-radius: 20px;
+  background: #f9f9f9;
+  margin: 0 auto; /* Center the accordion */
+  padding: 0.5rem;
+  max-width: 63rem; /* Adjust max-width as needed */
+  width: 100%; /* Make it responsive */
+  margin-bottom: 14rem;
 }
+
 #accordion li {
   list-style: none;
-  width: 100%;
   background: #f9f9f9;
   padding: 20px;
-  border-radius: 20px;
 }
 
 #accordion li label {
@@ -206,17 +227,19 @@ body {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  color: black; /* colour for question */
+  color: black;
 }
+
 #accordion li label span {
   transform: rotate(90deg);
   font-size: 22px;
   color: #333;
 }
+
 #accordion label + input[type="radio"] {
-  /* to hide radio button */
-  display: none;
+  display: none; /* Hide the radio button */
 }
+
 #accordion .content {
   padding: 0 10px;
   line-height: 26px;
@@ -224,9 +247,19 @@ body {
   overflow: hidden;
   transition: max-height 0.5s;
 }
+
 #accordion label + input[type="radio"]:checked + .content {
   max-height: 400px;
 }
+
+.accordion-hr {
+  height: 1.5px; /* Set the height */
+  border: none; /* Remove the default border */
+  background-color: #e0e0e0; /* Light grey color */
+  width: 61rem; /* Set specific width */
+  margin-left: 1.5rem;  
+}
+
 
 /* footer */
 .footer {
@@ -277,6 +310,7 @@ body {
   padding: 16px 5px;
   margin-top: 20px;
   border: 2px solid transparent;
+  font-weight: 550;
 }
 
 /* Responsive styles */
