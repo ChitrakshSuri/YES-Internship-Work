@@ -1,0 +1,271 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.right-margin {
+  width: 10%;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  /* padding: 20px; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header {
+  background-image: linear-gradient(to right, purple, yellow);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.header li {
+  margin-left: 15px;
+}
+
+.header li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 10px;
+}
+
+.main {
+  width: 60%;
+  padding: 10px;
+  position: relative; /* Make the .main div relatively positioned */
+  /* right: 00px;  */
+  /* Move it 400px away from the right */
+}
+
+.topics {
+  max-height: 450px; /* Set a fixed height for the topics section */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust the alpha value for transparency */
+}
+
+.topics::-webkit-scrollbar {
+  width: 8px;
+}
+
+.topics::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3; /* Light grey color */
+  border-radius: 4px;
+}
+
+.topics::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Light grey color for the track */
+}
+
+.topics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topics li {
+  margin-bottom: 45px; /* Increase the space between list items */
+  padding-bottom: 10px; /* Add padding at the bottom for extra spacing */
+  border-bottom: 1px solid #ccc; /* Add a separating line */
+  color: #808080; /* Grey color for all items */
+}
+
+.topics li.current-topic {
+  color: #000000; /* Black color for the current topic */
+}
+
+.topics li a {
+  text-decoration: none;
+  color: #808080; /* Set the color of the text to grey */
+}
+
+.topics li a:hover {
+  text-decoration: none;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.question p {
+  line-height: 1.5;
+}
+
+.summary {
+  /* background-color: #f2f2f2; */
+  /* padding: 10px; */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.summary h3 {
+  margin-bottom: 10px;
+}
+
+.summary p {
+  line-height: 1.5;
+}
+
+.unlock {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 10rem;
+
+  /* background-color: #000000; */
+}
+
+.unlock button {
+  background-image: linear-gradient(to right, purple, yellow);
+  /* background: linear-gradient(0deg, #E6E6E6, #E6E6E6),
+linear-gradient(270deg, #FEAC2F 0%, #9B32AD 33.48%, #381AB2 71.46%, #17082C 102.19%),
+linear-gradient(269.83deg, #FEAC2F 17.01%, #9B32AD 51.81%, #381AB2 91.27%, #17082C 123.2%); */
+
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Tab Menu */
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #f5f5f5; */
+  /* padding: 10px 0; */
+  /* border-bottom: 2px solid #ccc; */
+}
+
+.tab-menu button {
+  background-color: #f5f5f5;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  font-weight: bold;
+  /* border-bottom: 2px solid #ff5e5e; */
+}
+
+.tab-btn:hover {
+  color: black;
+}
+
+.total-items {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.total-items span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dropdown {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.que-tit {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  /* width: 100%; */
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px;
+  font-family: sans-serif;
+}
+
+.sol {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  /* width: 100%; */
+  font-size: 18px;
+  padding: 14px;
+  font-family: sans-serif;
+}
+
+.blur {
+  opacity: 0.5; /* Adjust the opacity for a blurring effect */
+  filter: blur(5px); /* This will add a blur effect */
+}
+
+p + .blur {
+  margin-top: -10px; /* Adjust this value to reduce the gap between the <p> and the .blur div */
+}
