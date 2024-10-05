@@ -139,11 +139,11 @@ body {
   color: black;
   width: 15rem;
   text-decoration: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding: 8px 16px;
   height: 30px;
   margin-top: 35px;
-  border: 2px solid transparent; /* Border for the gradient effect */
+  /* Border for the gradient effect */
 
   transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition */
 
@@ -155,14 +155,25 @@ body {
   border: 1.5px 0px 0px 0px;
   opacity: 0px; */
 
-  border-image: radial-gradient(
+  /* border-image: radial-gradient(
       134.61% 193.04% at 97.06% 13.13%,
       #feac2f 0%,
       #9b32ad 32.77%,
       #381ab2 69.93%,
       #17082c 100%
     )
-    1;
+    1; */
+  background: radial-gradient(white, white) padding-box,
+    radial-gradient(
+        134.61% 193.04% at 97.06% 13.13%,
+        #feac2f 0%,
+        #9b32ad 32.77%,
+        #381ab2 69.93%,
+        #17082c 100%
+      )
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 0.4rem;
 }
 .custom-hr {
   margin-top: 1.5rem;
@@ -193,7 +204,8 @@ body {
     #381ab2 69.93%,
     #17082c 100%
   );
-  color: white; /* Change text color to white when hovered */
+  /* Change text color to white when hovered */
+  color: white;
   border: 0px solid transparent;
 }
 
